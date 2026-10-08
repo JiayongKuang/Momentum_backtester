@@ -1,0 +1,19 @@
+starting_capital: 300000
+position_size: 10000
+slippage_pct: 0.0005
+minimum_history: 400
+warmup_calendar_days: 900
+batch_size: 20
+watch_tracking_days: 20
+stop_loss_pct: 0.05
+profit_target_pct: 0.0
+exit_sma_period: 20
+max_holding_days: 0
+max_positions: 30
+market_regime_required: true
+trend: {sma_short: 50, sma_long: 200, slope_lookback: 20, high_low_lookback: 252, max_below_high: 0.25, min_above_low: 0.30, rs_lookback: 126, rs_top_percent: 0.30, allow_above_spy_fallback: true, regression_lookback: 120, min_r_squared: 0.75, atr_period: 14, max_atr_pct: 0.05}
+signal: {watch_below_pivot: 0.03, breakout_volume_multiple: 1.40, extended_above_pivot: 0.03}
+flat_base: {prior_advance: 0.30, prior_lookback: 126, min_length: 25, max_length: 60, max_depth: 0.12, max_base_volume_ratio: 0.90}
+cup_handle: {prior_advance: 0.30, min_cup_length: 35, max_cup_length: 120, min_cup_depth: 0.12, max_cup_depth: 0.35, rim_tolerance: 0.10, min_handle_length: 5, max_handle_length: 20, max_handle_depth: 0.12}
+vcp: {prior_advance: 0.30, max_base_length: 60, min_contractions: 2, max_contractions: 4, min_depth_reduction: 0.25, max_final_depth: 0.06}
+pullback: {swing_lookback: 25, min_pullback: 0.05, max_pullback: 0.12, max_distance_sma50: 0.015}
